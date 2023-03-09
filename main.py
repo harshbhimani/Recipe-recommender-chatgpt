@@ -54,7 +54,7 @@ def start_chat():
             product_type = input("You: ")
             print("Recipe assistant: Sure, what is your dietry preference?")
             diet_type = input("You: ")
-            cart_list = ["flour","tomatoes","garlic","cheese"]           # Generate a response with a product recommendation based on the user's input
+            cart_list = ["flour","tomatoes","garlic","cheese"]           # Generate a response with a product recommendation based on the user's cart
             prompt = f"I'm looking for a {diet_type} {product_type} recipe with {cart_list} to recommend to {user_name}."
             response = generate_response(prompt)
             # Print the chatbot's response
